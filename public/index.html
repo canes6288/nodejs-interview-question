@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- MovieTime CSS -->
+    <link rel="stylesheet" href="/css/movie-time.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- Index JS -->
+    <script src="/javascripts/index.js"></script>
+  </head>
+  <body>
+    <div class="row" style="padding: 20px">
+      <div class="col-md-12">
+        <h1>MovieTime</h1>
+      </div>
+    </div>
+    <form>
+      <div class="row header-row">
+        <div class="col-md-12">
+          <div id="search">
+            <input type="text" onkeydown="if (event.keyCode == 13) { document.getElementById('search-btn').click(); return false }" class="search-query" id="search-field" placeholder="Search">
+            <button type="button" id="search-btn" class="btn btn-primary btn-lg">Search</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="row header-row">
+      <div class="col-md-12">
+        <div>
+          <button id="favorite-list" class="btn btn-warning btn-lg">Favorites</button>
+        </div>
+      </div>
+    </div>
+    <div class="row header-row">
+      <div class="col-md-12">
+        <div>
+          <button id="clear-favorites" class="btn btn-danger btn-lg">Clear Favorites</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="search-results"></div>
+
+  </body>
+</html>
